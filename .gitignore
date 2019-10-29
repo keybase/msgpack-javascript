@@ -1,6 +1,5 @@
 node_modules/
 dist/
-dist.es5/
 build/
 .nyc_output/
 coverage/
