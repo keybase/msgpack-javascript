@@ -10,7 +10,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm publish --dry-run",
-    "prepare": "npm run clean && npm run asbuild:production && tsc -p tsconfig.dist.json && webpack",
+    "AAAAprepare": "npm run clean && npm run asbuild:production && tsc -p tsconfig.dist.json && webpack",
     "prepublishOnly": "run-p 'test:dist:*' && npm run test:browser",
     "clean": "rimraf build dist dist.*",
     "test": "mocha 'test/**/*.test.ts'",
