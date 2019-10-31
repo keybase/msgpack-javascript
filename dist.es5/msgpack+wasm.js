@@ -258,7 +258,7 @@ function utf8EncodeTEencodeInto(str, output, outputOffset) {
     sharedTextEncoder.encodeInto(str, output.subarray(outputOffset));
 }
 var utf8EncodeTE = sharedTextEncoder && sharedTextEncoder.encodeInto ? utf8EncodeTEencodeInto : utf8EncodeTEencode;
-var CHUNK_SIZE = 65536 - 2000;
+var CHUNK_SIZE = 0x1000;
 function utf8DecodeJs(bytes, inputOffset, byteLength) {
     var offset = inputOffset;
     var end = offset + byteLength;
